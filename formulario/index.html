@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <h1>Cadastro</h1>
+    <form method="get" action="formulario.php">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"  placeholder="Digite seu nome">
+        <br><br>
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" placeholder="12345678900">
+        <br><br>
+        <label for="dataNascimento">Data de dataNascimento:</label>
+        <input type="date" name="dataNascimento">
+        <br><br>
+        <label> Gênero:</label>
+        <input type="radio" name="genero"><label>Masculino</label>  
+        <input type="radio" name="genero"><label>Feminino</label>
+        <br><br>
+        <label>Profissão: </label><select name="profissao">
+            <option >Professor</option>
+            <option >Músico</option>
+            <option >Médico</option>
+            <option >Outra</option>
+        </select>
+        <br><br>
+        <label >Lazer:</label> <br>
+        <input type="checkbox" name="lazer1">Ler <br>
+        <input type="checkbox" name="lazer2">Jogar <br>
+        <input type="checkbox" name="lazer3">Viajar <br>
+        <input type="checkbox" name="lazer4">Outro 
+        <br><br>
+        <label >Observação:</label> <br>
+        <textarea name="observacao"></textarea>
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+
+
+</body>
+
+</html>
