@@ -1,4 +1,3 @@
-
 <?php
     require_once "Models/Conexao.class.php";
     require_once "Models/CategoriaDAO.class.php";
@@ -11,7 +10,7 @@
             $categoriaDAO = new CategoriaDAO();
             $retorno = $categoriaDAO->buscarTodas();
             //apresentá-los
-            require_once "Views/ListarCategorias.php";
+            require_once "Views/listar_categorias.php";
         }
         public function inserir()
         {
@@ -48,31 +47,5 @@
                 die();
             }
         }//excluir
-
-        public function alterar(){
-
-            $msg = "";
-            if($_POST){
-                if(empty($_POST["descritivo"])){
-                    $msg = "Primeiro o nome da categoria";
-                }
-                else{
-                    //update no banco de dados
-                    $categoria = new Categoria($_POST["id_categoria"], $_POST["descritivo"]);
-                    $categoriaDAO = new CategoriaDAO();
-                    $retorno = $categoriaDAO->editar($categoria);
-                    Header("Location:index.php?controle=CategoriaController&metodo=listar&msg=$retorno");
-                }
-            }
-            if($_GET && isset($_GET["id"]))
-            {
-                //Busca a categoria no banco de dados
-                $categoria = new Categoria ($_GET["id"]);
-                $categoriaDAO = new categoriaDAO();
-                $ret = $categoriaDAO->buscarUma($categoria);
-    
-                require_once "Views/edit_categoria.php";
-            }
-        }//alterar
     }//fim da classe
 ?>
