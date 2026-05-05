@@ -28,6 +28,5 @@ echo "Cliente associado: <br>";
 echo "Nome: " . $celular->getCliente()->getNome() . "<br>"; 
 echo "CPF: " . $celular->getCliente()->getCpf() . "<br>"; 
 
-
 ?>
 

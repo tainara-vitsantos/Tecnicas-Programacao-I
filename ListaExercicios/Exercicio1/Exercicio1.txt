@@ -1,0 +1,42 @@
+1. Desenvolva as classes, métodos gets e settters, e os relacionamentos entre as
+classes, conforme diagrama abaixo, utilizando orientação a objeto. Instancie
+um objeto da classe Festa e mostre todos os dados desse objeto sem utilizar
+var_dump. 
+
+
+1 - Composição de Pessoa → Telefone
+No diagrama aparece 1 para N. É bilateral então pessoa tambem vai pra telefone
+
+Uma Pessoa pode ter vários Telefones.
+//Composição, a classe pessoa tem um telefone
+//classe telefone tem uma pessoa 
+
+2- Herança (Generalização)
+
+Pessoa é a classe base, não precissa Fazer nada.
+
+Cliente herda de Pessoa
+Contratado herda de Pessoa
+
+class Cliente extends Pessoa
+class Contratado extends Pessoa
+
+Não cria nenhum get e nenhum Set
+
+3 - Cliente → Festa (Unilateral) Quem esta na ponta da seta que vai pra dentro da outra classe
+Cliente não é um array e sim um objeto.
+
+4 - Cliente → Festa (Bilateral)
+1 festa pertence a 1 contratado (objeto)
+E 1 contratado pode fazer varias festas (Array)
+
+5- Agregação Unilateral
+Decoração vai pra Festa e festa nao vai pra decoração!
+Vai como objeto e nao como array
+ CTRl + D
+
+ 
+
+
+
+
