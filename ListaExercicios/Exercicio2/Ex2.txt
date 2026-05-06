@@ -1,0 +1,3 @@
+2 - Desenvolva as classes, métodos gets e settters, e os relacionamentos entre as classes, conforme diagrama abaixo, utilizando orientação a objeto. Instancie um objeto da classe Avaliação e mostre todos os dados desse objeto sem utilizar var_dump. 
+
+

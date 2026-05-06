@@ -1,34 +1,30 @@
 <?php
-
 //Pessoa é a classe base
 
-class Pessoa{
+class Pessoa {
     public function __construct(
         protected string $nome = " ",
-
-        //Relação de composição, a classe pessoa tem um telefone
-        protected array $telefones = array(),
-        //Parametros para criar um telefone na composição
-        int $ddd = 0,
-        string $numero = ""
        
-    )
-    {
-        //Composição, a classe pessoa tem um telefone
-         $this->telefones[] = new Telefone($ddd, $numero);
+       //Relação com telefone
+        int $ddd = 0, 
+        string $numero = ""
+    ){
+      //composição com telefone
+      $this->telefones[] = new Telefone($ddd, $numero);
     }
+}
 
-    //Metodos get
+// Metodos get
     public function getNome(){
         return $this->nome;
     }
 
-    //Metodos set
+//Metodos set
     public function setNome(string $nome){
         $this->nome = $nome;
-    }
 
-    //Metodos para o telefone
+    
+ //Metodos para o telefone
     public function getTelefones()
     {
         return $this->telefones;
@@ -39,9 +35,4 @@ class Pessoa{
         $this->telefones[] = new Telefone($ddd, $numero);
     }
 
-  
-}
-
-    
-
-
+ }

@@ -4,8 +4,9 @@ um objeto da classe Festa e mostre todos os dados desse objeto sem utilizar
 var_dump. 
 
 
-1 - Composição de Pessoa → Telefone
-No diagrama aparece 1 para N. É bilateral então pessoa tambem vai pra telefone
+1 - Composição Bilateral  de Pessoa → Telefone
+No diagrama aparece 1 para N. É bilateral 
+então pessoa tambem vai pra telefone, e telefone para pessoa.
 
 Uma Pessoa pode ter vários Telefones.
 //Composição, a classe pessoa tem um telefone
@@ -23,10 +24,10 @@ class Contratado extends Pessoa
 
 Não cria nenhum get e nenhum Set
 
-3 - Cliente → Festa (Unilateral) Quem esta na ponta da seta que vai pra dentro da outra classe
+3 - Cliente → Festa Assossiação (Unilateral) Quem esta na ponta da seta que vai pra dentro da outra classe
 Cliente não é um array e sim um objeto.
 
-4 - Cliente → Festa (Bilateral)
+4 - Cliente → Festa Assossiação (Bilateral)
 1 festa pertence a 1 contratado (objeto)
 E 1 contratado pode fazer varias festas (Array)
 
@@ -35,6 +36,21 @@ Decoração vai pra Festa e festa nao vai pra decoração!
 Vai como objeto e nao como array
  CTRl + D
 
+======================================================================
+
+1 - Herança (Generalização)
+Linha com seta vazada (triângulo branco)
+Cliente → Pessoa
+Contratado → Pessoa
+Significa:
+
+Cliente é uma Pessoa
+Contratado é uma Pessoa
+
+Tradução pra código:
+
+class Cliente extends Pessoa {}
+class Contratado extends Pessoa {}  
  
 
 
