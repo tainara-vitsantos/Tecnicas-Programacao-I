@@ -123,7 +123,7 @@ class UsuarioController {
     }
     
 
-    public function logout() {
+    /* public function logout() {
 
-    }
+    } */
 }
