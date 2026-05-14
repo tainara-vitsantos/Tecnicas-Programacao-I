@@ -12,7 +12,7 @@ class Pessoa {
       //composição com telefone
       $this->telefones[] = new Telefone($ddd, $numero);
     }
-}
+
 
 // Metodos get
     public function getNome(){
@@ -36,3 +36,6 @@ class Pessoa {
     }
 
  }
+
+
+}

@@ -1,5 +1,6 @@
 <?php
 
+// Avaliação é a classe Associativa entre a classe Avaliador e a classe Receita, ou seja, uma avaliação é feita por um avaliador e é sobre uma receita
 class Avaliacao{
     public function __construct(
         private float $nota = 0.0,
